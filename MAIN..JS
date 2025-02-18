@@ -18,7 +18,19 @@ $("#add").click(function () {
 
 
 });
-
+   $("#add").click(function() {
+        $("#add").text("Added");
+        $("#products").append("<li>Rice</li>",);
+    });
+    $("#remove").click(function() {
+        $("#remove").text("Removed");
+        $("#products li:first").remove();
+        
+    });
+    $("#complete").click(function() {
+        $("#complete").text("Marked complete");
+        
+    });
 
 
 });
